@@ -15,7 +15,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="BOSHome.aspx"><h2>DAA<em>Tracker</em></h2></a>
+          <a class="navbar-brand" href="BOSHome.aspx"><h2>DAA <em>Tracker</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -31,8 +31,8 @@
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
                       <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li>
                                 <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li>
-                              <li><a href="BOSMembers.aspx" style="color:white">Meeting Members</a></li>
-                              <li><a href="Bosmeeting.aspx" style="color:white">Meeting Details</a></li>
+                              <li><a href="BOSMembers.aspx" style="color:white">View Meeting Members</a></li>
+                              <li><a href="Bosmeeting.aspx" style="color:white">View Meeting Details</a></li>
                             </ul>
               </li>
               <li class="nav-item">
