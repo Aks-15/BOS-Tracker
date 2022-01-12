@@ -41,7 +41,6 @@
                 </div>
             </div>
             </div>
-
             <div class="text-center">
                         <!--<h2 class="mb-5 tm-content-title">Diagoona HTML Template</h2>-->
                         <b><h1 style=font-size:65px class="mb-5">DEPARTMENTAL ACADEMIC ACTIVITY TRACKER</h1></b>

@@ -56,7 +56,7 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-          <h1>HELOOOOOOOOOOOOOOOO</h1>
+          <h1></h1>
           </div>
         </div>
       </div>

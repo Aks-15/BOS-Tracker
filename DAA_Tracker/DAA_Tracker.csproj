@@ -115,6 +115,7 @@
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
     <Content Include="Home.aspx" />
     <Content Include="img\diagoona-bg-1.jpg" />
+    <Content Include="img\x.jpg" />
     <Content Include="img\diagoona-bg-2.jpg" />
     <Content Include="img\diagoona-bg-3.jpg" />
     <Content Include="img\services-1.jpg" />
@@ -125,7 +126,7 @@
     <Content Include="js\jquery.backstretch.min.js" />
     <Content Include="js\templatemo-script.js" />
     <Content Include="Login.aspx" />
-    <Content Include="photos\AIMIT_1.jpg" />
+    <Content Include="photos\diagoona-bg-1.jpg" />
     <Content Include="photos\AIMIT_2.png" />
     <Content Include="photos\AIMIT_3.png" />
     <Content Include="photos\AIMIT_4.png" />

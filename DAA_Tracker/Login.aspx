@@ -56,6 +56,10 @@
                             <div class="text-center">
                                 <asp:Button ID="btnlogin" runat="server" CssClass="btn btn-big btn-primary" Text="LogIn" OnClick="btnlogin_Click" />
                             </div>
+                            <br />
+                            <div class="text-center">
+                                <asp:Label ID="Label1" CssClass="text-danger" runat="server" Text=""></asp:Label>
+                            </div>
                         </form>
                     </section>
                 </main>
