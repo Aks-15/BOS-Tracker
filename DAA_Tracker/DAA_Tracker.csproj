@@ -107,31 +107,40 @@
     <Content Include="BOSMembers.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\templatemo-diagoona.css" />
+    <Content Include="deptmem.aspx" />
     <Content Include="Feedback.aspx" />
     <Content Include="fontawesome\css\all.min.css" />
     <Content Include="fontawesome\LICENSE.txt" />
     <Content Include="fontawesome\webfonts\fa-brands-400.svg" />
     <Content Include="fontawesome\webfonts\fa-regular-400.svg" />
     <Content Include="fontawesome\webfonts\fa-solid-900.svg" />
+    <Content Include="formtmp\css\main.css" />
+    <Content Include="formtmp\js\global.js" />
+    <Content Include="formtmp\vendor\datepicker\daterangepicker.css" />
+    <Content Include="formtmp\vendor\datepicker\daterangepicker.js" />
+    <Content Include="formtmp\vendor\datepicker\moment.min.js" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\css\font-awesome.css" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\css\font-awesome.min.css" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\fontawesome-webfont.svg" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\HELP-US-OUT.txt" />
+    <Content Include="formtmp\vendor\jquery\jquery.js" />
+    <Content Include="formtmp\vendor\jquery\jquery.min.js" />
+    <Content Include="formtmp\vendor\mdi-font\css\material-design-iconic-font.css" />
+    <Content Include="formtmp\vendor\mdi-font\css\material-design-iconic-font.min.css" />
+    <Content Include="formtmp\vendor\mdi-font\fonts\Material-Design-Iconic-Font.svg" />
+    <Content Include="formtmp\vendor\select2\select2.min.css" />
+    <Content Include="formtmp\vendor\select2\select2.min.js" />
     <Content Include="Home.aspx" />
     <Content Include="img\diagoona-bg-1.jpg" />
-    <Content Include="img\diagoona-bg-2.jpg" />
-    <Content Include="img\x.jpg" />
-    <Content Include="img\diagoona-bg-3.jpg" />
+    <Content Include="img\aimit.jpg" />
     <Content Include="img\services-1.jpg" />
     <Content Include="img\services-2.jpg" />
     <Content Include="img\services-3.jpg" />
-    <Content Include="img\y.jpg" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="js\jquery.backstretch.min.js" />
     <Content Include="js\templatemo-script.js" />
     <Content Include="Login.aspx" />
-    <Content Include="photos\diagoona-bg-1.jpg" />
-    <Content Include="photos\AIMIT_2.png" />
-    <Content Include="photos\AIMIT_3.png" />
-    <Content Include="photos\AIMIT_4.png" />
-    <Content Include="photos\diagoona-bg-2.jpg" />
     <Content Include="Services.aspx" />
     <Content Include="Syllabus.aspx" />
     <Content Include="vendor\bootstrap\css\bootstrap.css" />
@@ -144,6 +153,8 @@
     <Content Include="vendor\jquery\jquery.min.js" />
     <Content Include="vendor\jquery\jquery.slim.js" />
     <Content Include="vendor\jquery\jquery.slim.min.js" />
+    <Content Include="viewBosMem.aspx" />
+    <Content Include="ViewMeetDet.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -181,6 +192,13 @@
     </Compile>
     <Compile Include="BOSMembers.aspx.designer.cs">
       <DependentUpon>BOSMembers.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="deptmem.aspx.cs">
+      <DependentUpon>deptmem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="deptmem.aspx.designer.cs">
+      <DependentUpon>deptmem.aspx</DependentUpon>
     </Compile>
     <Compile Include="Feedback.aspx.cs">
       <DependentUpon>Feedback.aspx</DependentUpon>
@@ -225,6 +243,20 @@
     <Compile Include="Syllabus.aspx.designer.cs">
       <DependentUpon>Syllabus.aspx</DependentUpon>
     </Compile>
+    <Compile Include="viewBosMem.aspx.cs">
+      <DependentUpon>viewBosMem.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="viewBosMem.aspx.designer.cs">
+      <DependentUpon>viewBosMem.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewMeetDet.aspx.cs">
+      <DependentUpon>ViewMeetDet.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ViewMeetDet.aspx.designer.cs">
+      <DependentUpon>ViewMeetDet.aspx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="BOS.Master" />
@@ -253,6 +285,15 @@
     <Content Include="assets\fonts\slick.eot" />
     <Content Include="assets\fonts\slick.ttf" />
     <Content Include="assets\fonts\slick.woff" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\fontawesome-webfont.eot" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\fontawesome-webfont.ttf" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\fontawesome-webfont.woff2" />
+    <Content Include="formtmp\vendor\font-awesome-4.7\fonts\FontAwesome.otf" />
+    <Content Include="formtmp\vendor\mdi-font\fonts\Material-Design-Iconic-Font.eot" />
+    <Content Include="formtmp\vendor\mdi-font\fonts\Material-Design-Iconic-Font.ttf" />
+    <Content Include="formtmp\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff" />
+    <Content Include="formtmp\vendor\mdi-font\fonts\Material-Design-Iconic-Font.woff2" />
     <None Include="packages.config" />
     <Content Include="vendor\bootstrap\css\bootstrap.css.map" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css.map" />
@@ -268,6 +309,9 @@
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="photos\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
