@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <div class="tm-container">
+    <div class="tm-container" style="background-color:rgba(0,0,0,0.7)">
         <div>
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
@@ -29,9 +29,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="About.aspx">About</a>
                                 </li>
-                                <li class="nav-item">
+                                <!--<li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="Services.aspx">Services</a>
-                                </li>                            
+                                </li>-->                            
                                 <li class="nav-item active">
                                     <a class="nav-link tm-nav-link" href="Login.aspx">LogIn <span class="sr-only">(current)</span></a>
                                 </li>
@@ -55,6 +55,10 @@
                             </div>
                             <div class="text-center">
                                 <asp:Button ID="btnlogin" runat="server" CssClass="btn btn-big btn-primary" Text="LogIn" OnClick="btnlogin_Click" />
+                            </div>
+                            <br />
+                            <div class="text-center">
+                                <asp:Label ID="Label1" CssClass="text-danger" runat="server" Text=""></asp:Label>
                             </div>
                         </form>
                     </section>

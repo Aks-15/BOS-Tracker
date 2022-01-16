@@ -2,7 +2,7 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-        <div class="tm-container">        
+        <div class="tm-container" style="background-color:rgba(0,0,0,0.6)">        
         <div>
             <div class="tm-row pt-4">
                 <div class="tm-col-left">
@@ -29,9 +29,9 @@
                                 <li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="About.aspx">About</a>
                                 </li>
-                                <li class="nav-item">
+                                <!--<li class="nav-item">
                                     <a class="nav-link tm-nav-link" href="Services.aspx">Services</a>
-                                </li>                            
+                                </li>-->                            
                                 <li class="nav-item active">
                                     <a class="nav-link tm-nav-link" href="Login.aspx">LogIn <span class="sr-only">(current)</span></a>
                                 </li>
@@ -41,10 +41,11 @@
                 </div>
             </div>
             </div>
-
-            <div class="text-center">
+            <div class="text-center" style="text-align:start">
                         <!--<h2 class="mb-5 tm-content-title">Diagoona HTML Template</h2>-->
-                        <b><h1 style=font-size:65px class="mb-5">DEPARTMENTAL ACADEMIC ACTIVITY TRACKER</h1></b>
+                        <h1 style="font-size:50px" class="mb-5">DEPARTMENTAL ACADEMIC ACTIVITY TRACKER</h1>
+                        <br />
+                        <br />
                         <!--<hr class="mb-5">-->
                         <!--<p class="mb-5">Diagoona is Bootstrap v4.4.1 layout. This BG is 50% transparent. You can set the background images auto play settings (true or false in line number 33) in templatemo-script.js file in js folder.</p>-->                       
                         <!--<a href="about.html" class="btn btn-primary">Continue...</a>-->               
@@ -69,10 +70,10 @@
         </div>
 
         <!-- Diagonal background design -->
-        <!-- <div class="tm-bg">
+          <!--<div class="tm-bg">
             <div class="tm-bg-left"></div>
             <div class="tm-bg-right"></div>
-        </div> -->
+        </div>-->
     </div>
 
     <script src="js/jquery-3.4.1.min.js"></script>

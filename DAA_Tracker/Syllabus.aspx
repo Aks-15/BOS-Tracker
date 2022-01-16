@@ -35,9 +35,9 @@
                             <li><a href="Bosmeeting.aspx" style="color:white">Meeting Details</a></li>
                             </ul>
               </li>
-              <li class="nav-item active">
+              <!--<li class="nav-item active">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
-              </li>
+              </li>-->
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
               </li>
