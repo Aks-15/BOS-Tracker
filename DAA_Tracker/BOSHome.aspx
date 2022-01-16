@@ -15,7 +15,7 @@
     <header class="">
       <nav class="navbar navbar-expand-lg">
         <div class="container">
-          <a class="navbar-brand" href="BOSHome.aspx"><h2>Bos<em>Tracker</em></h2></a>
+          <a class="navbar-brand" href="BOSHome.aspx"><h2>DAA <em>Tracker</em></h2></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -29,10 +29,10 @@
               <li class="nav-item  dropdown">
                 <a class="nav-link" href="#" data-toggle="dropdown">BOS Meeting<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
-                      <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li>
-                                <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li>
-                              <li><a href="BOSMembers.aspx" style="color:white">Meeting Members</a></li>
-                              <li><a href="Bosmeeting.aspx" style="color:white">Meeting Details</a></li>
+                      <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
+                                <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
+                              <li><a href="ViewBosMem.aspx" style="color:white">View Members</a></li><hr />
+                              <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>
                             </ul>
               </li>
               <li class="nav-item">
@@ -55,8 +55,9 @@
     <div class="banner header-text">
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
+            
           <div class="text-content">
-           
+           <h1 style="font-size:50px;color:white;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome to Board Of Study-Tracker</h1>
           </div>
         </div>
       </div>
