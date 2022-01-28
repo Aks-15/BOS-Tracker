@@ -77,21 +77,23 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
-              <li class="nav-item active dropdown">
+             <li class="nav-item  dropdown">
                 <a class="nav-link" href="#" data-toggle="dropdown">BOS Meeting<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
-                              <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
+                      <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
                                 <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
-                              <li><a href="ViewBosMem.aspx" style="color:white">View Members</a></li><hr />
-                              <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>                            
+                                <li><a href="deptmem.aspx" style="color:white">Update Dept Mem</a></li>                               
                             </ul>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="ViewBosMem.aspx">View & Report</a>
+              </li>
+             <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
-              </li>
+              </li>-->
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>
@@ -116,16 +118,21 @@
     <div class="banner header-text">
         <div class="banner-item-01">
           <div class="text-content">
-              <br />
-              <br />
-              <br />
-              <br />
+              <br /><br /><br />
               <div class="container">
-             <table >
+             <table>
                  <tr>
                      <td style="color:white;text-align:left" class="auto-style25">Date:</td>
                      <td class="auto-style26">
-                         <asp:TextBox ID="txtdate" TextMode="Date" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server"></asp:TextBox>
+                         <asp:TextBox ID="txtdate" TextMode="Date" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" style="margin-top:5px"></asp:TextBox>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td style="color:white;text-align:left" class="auto-style25">
+                         Place:
+                     </td>
+                     <td>
+                         <asp:TextBox ID="txtplace" BackColor="Transparent" ForeColor="White" CssClass="form-control"  runat="server" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -133,7 +140,7 @@
                          Chairman:
                      </td>
                      <td class="auto-style18">
-                         <asp:TextBox ID="txtCm" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server"></asp:TextBox>
+                         <asp:TextBox ID="txtCm" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -141,18 +148,15 @@
                          Members of the Department:
                      </td>
                      <td class="auto-style20">
-                         <asp:TextBox ID="txtMd" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
-                         </td>
-                         <td>
-                         <asp:Button ID="btnUpdateMd" runat="server" Text="Update Dept. Members" CssClass="btn btn-success" OnClick="btnUpdateMd_Click"/>                               
-                     </td>
+                         <asp:TextBox ID="txtMd" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine" style="margin-top:5px"></asp:TextBox>
+                         </td>                        
                  </tr>
                  <tr>
-                     <td style="color:white;text-align:left" class="auto-style21">
+                     <td style="color:white;text-align:left;margin-top:20px" class="auto-style21">
                          Vice Chancellor Nominee:
                      </td>
-                     <td class="auto-style22">
-                         <asp:TextBox ID="txtVcn" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
+                     <td class="auto-style22" >
+                         <asp:TextBox ID="txtVcn" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -160,7 +164,7 @@
                          Subject Expert:
                      </td>
                      <td class="auto-style24">
-                         <asp:TextBox ID="txtSe" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
+                         <asp:TextBox ID="txtSe" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -168,7 +172,7 @@
                          Representative from industry/Corporate Sector/Allied Area:
                      </td>
                      <td class="auto-style16">
-                         <asp:TextBox ID="txtRfi" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine"></asp:TextBox>
+                         <asp:TextBox ID="txtRfi" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server" TextMode="MultiLine" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -176,7 +180,7 @@
                      Meritorious Alumnus:
                      </td>
                      <td class="auto-style14">
-                         <asp:TextBox ID="txtMa" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White"></asp:TextBox>
+                         <asp:TextBox ID="txtMa" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White" style="margin-top:5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -184,17 +188,29 @@
                      Student Representative:
                      </td>
                      <td class="auto-style14">
-                         <asp:TextBox ID="txtSr" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White"></asp:TextBox>
+                         <asp:TextBox ID="txtSr" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White" style="margin-top:-5px"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
-                     <td colspan="2" style="text-align:center">
-                         <asp:Button ID="Btnadd" runat="server" CssClass="btn btn-lg btn-danger" Text="ADD" OnClick="Btnadd_Click" />
+                     <td style="color:white;text-align:left">
+                         Upload File:
+                     </td>
+                     <td>
+                         <asp:FileUpload ID="FileUpload1" runat="server" ForeColor="White" style="margin-top:-5px"/>
                      </td>
                  </tr>
-             </table>
-                  </div>
+                 <tr>
+                     <td style="text-align:center">
+                         <asp:Button ID="btnClear" CssClass="btn btn-sm btn-danger" runat="server" Text="Clear" OnClick="btnClear_Click"/>
+                     </td>
+                     <td style="text-align:center">
+                         &nbsp;&nbsp;&nbsp;&nbsp;
+                         <asp:Button ID="Btnadd" runat="server" CssClass="btn btn-sm btn-success" Text="ADD" OnClick="Btnadd_Click" />
+                     </td>
+                 </tr>
+             </table>                   
           </div>
+        </div>
       </div>
     </div>
     <!-- Bootstrap core JavaScript -->

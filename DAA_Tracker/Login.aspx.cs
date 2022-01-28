@@ -45,7 +45,9 @@ namespace DAA_Tracker
             }
             else
             {
-                Label1.Text = "Please Enter Proper UserName and Password";
+                Response.Write("<script>alert('Login Failed!! Please try again')</script>");
+                txtuser.Text = "";
+                txtpwd.Text = "";
             }
         }
     }

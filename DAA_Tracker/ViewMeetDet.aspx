@@ -28,12 +28,12 @@
                               <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>                         
                             </ul>
               </li>
-              <li class="nav-item">
+             <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
-              </li>
+              </li>-->
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>

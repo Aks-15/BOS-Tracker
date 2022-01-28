@@ -19,21 +19,23 @@
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
-              <li class="nav-item active dropdown">
+              <li class="nav-item  dropdown">
                 <a class="nav-link" href="#" data-toggle="dropdown">BOS Meeting<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
-                              <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
+                      <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
                                 <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
-                              <li><a href="ViewBosMem.aspx" style="color:white">View Members</a></li><hr />
-                              <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>                         
+                                <li><a href="deptmem.aspx" style="color:white">Update Dept Mem</a></li>                       
                             </ul>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="ViewBosMem.aspx">View & Report</a>
+              </li>
+             <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
-              </li>
+              </li>-->
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>
@@ -48,8 +50,19 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-             <div class="align-content-center container" style="width:1200px;height:300px;overflow:scroll">
-                 <asp:GridView ID="GridViewMem" runat="server" BackColor="Black" ForeColor="White" BorderStyle="Solid" Font-Bold="False" GridLines="Both" AllowCustomPaging="False"></asp:GridView>
+             <div class="align-content-center container" style="width:1200px;height:285px;overflow:scroll">
+                 <asp:GridView ID="GridViewMem" CssClass="table" runat="server" BackColor="Black" ForeColor="White" BorderStyle="Solid" Font-Bold="False" GridLines="Both" AllowCustomPaging="False">                     
+                 
+                    <%-- <Columns>  
+                        <asp:BoundField DataField="Name" HeaderText="File Name" />  
+                            <asp:TemplateField ItemStyle-HorizontalAlign="Center">  
+                                <ItemTemplate>  
+                                    <asp:LinkButton ID="lnkDownload" runat="server" Text="Download" CommandArgument='<%# Eval("Id") %>' OnClick="DownloadFile"></asp:LinkButton>  
+                                </ItemTemplate>  
+                            </asp:TemplateField>  
+                    </Columns>--%>  
+                
+                 </asp:GridView>
              </div>
           </div>
         </div>

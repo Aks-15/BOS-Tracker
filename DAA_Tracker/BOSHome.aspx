@@ -30,17 +30,19 @@
                 <a class="nav-link" href="#" data-toggle="dropdown">BOS Meeting<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
                       <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
-                                <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
-                              <li><a href="ViewBosMem.aspx" style="color:white">View Members</a></li><hr />
-                              <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>
+                               <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
+                                <li><a href="deptmem.aspx" style="color:white">Update Dept Mem</a></li>                               
                             </ul>
               </li>
               <li class="nav-item">
+                <a class="nav-link" href="ViewBosMem.aspx">View & Report</a>
+              </li>
+              <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
-              </li>
+              </li>-->
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>

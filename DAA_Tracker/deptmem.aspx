@@ -1,62 +1,28 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="deptmem.aspx.cs" Inherits="DAA_Tracker.deptmem" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style type="text/css">
-        .auto-style13 {
-            height: 50px;
-            width: 265px;
-        }
-        .auto-style14 {
-            height: 59px;
-            width: 351px;
-        }
-        .auto-style15 {
-            height: 64px;
-            width: 265px;
-        }
-        .auto-style16 {
-            height: 64px;
-            width: 351px;
-        }
-        .auto-style17 {
-            height: 47px;
-            width: 265px;
-        }
-        .auto-style18 {
-            height: 47px;
-            width: 351px;
-        }
-        .auto-style19 {
-            height: 61px;
-            width: 265px;
-        }
-        .auto-style20 {
-            height: 61px;
-            width: 351px;
-        }
-        .auto-style21 {
-            height: 60px;
-            width: 265px;
-        }
-        .auto-style22 {
-            height: 60px;
-            width: 351px;
-        }
-        .auto-style23 {
-            height: 65px;
-            width: 265px;
-        }
-        .auto-style24 {
-            height: 65px;
-            width: 351px;
-        }
-        .auto-style25 {
-            height: 37px;
-            width: 265px;
-        }
-        .auto-style26 {
-            height: 37px;
-            width: 351px;
-        }
+         .auto-style27 {
+             height: 77px;
+             width: 363px;
+         }
+         .auto-style28 {
+             height: 77px;
+             width: 470px;
+         }
+         .auto-style29 {
+             display: block;
+             font-size: 1rem;
+             line-height: 1.5;
+             color: #495057;
+             background-clip: padding-box;
+             border-radius: .25rem;
+             transition: none;
+             border: 1px solid #ced4da;
+             background-color: #fff;
+         }
+         .auto-style30 {
+             width: 470px;
+         }
     </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -71,7 +37,7 @@
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarResponsive">
-            <ul class="navbar-nav ml-auto">
+            <!--<ul class="navbar-nav ml-auto">
               <li class="nav-item ">
                 <a class="nav-link" href="BOSHome.aspx">Home
                   <span class="sr-only">(current)</span>
@@ -86,7 +52,7 @@
                               <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>
                             </ul>
               </li>
-              <li class="nav-item">
+              <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
@@ -95,7 +61,7 @@
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>
-            </ul>
+            </ul>-->
           </div>
         </div>
       </nav>
@@ -103,22 +69,63 @@
 
     <!-- Page Content -->
     <!-- Banner Starts Here -->
-    <div class="banner header-text">
+    <!--<div class="banner header-text">
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
           <div class="container">
-            
+              
              </div>
           </div>
         </div>
       </div>
     </div>
     <!-- Banner Ends Here -->
+    <div class="banner header-text">
+        <div class="banner-item-01">
+          <div class="text-content" style="margin-left: 131px">
+              <div class="container">
+           
+                  <br />
+                  <br />
+                  <br />
 
+            <table class="align-content-center" border="6">
+                <tr>
+                    <td colspan="2" style="text-align:center">
+                        <br />
+                        <h1 style="color:whitesmoke">Department Members</h1>
+                        <br />
+                        <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td style="color:ghostwhite;text-align:left" class="auto-style28">
+                        &nbsp;
+                        Please enter the faculty names by comma seperating it-
+                    </td>
+                    <td class="auto-style27">
+                        <asp:TextBox ID="TextBox1"  BackColor="Transparent" ForeColor="White" CssClass="auto-style29" runat="server" TextMode="MultiLine" Height="117px" Width="361px"></asp:TextBox>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style30" style="text-align:center">
+                        <br />
+                        <asp:Button ID="btnback" CssClass="btn btn-danger" runat="server" Text="Go back" OnClick="btnback_Click" />
+                    </td>
+                    <td style="text-align:center">
+                        <br />    
+                        <asp:Button ID="btnupdate"  CssClass="btn btn-success" runat="server" Text="Update" OnClick="btnupdate_Click" />
+                    </td>
+                </tr>
+            </table>               
+                  </div>
+              </div>
+            </div>
+        </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
