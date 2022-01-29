@@ -55,14 +55,14 @@
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
+      <%--<div class="owl-banner owl-carousel">--%>
         <div class="banner-item-01">
             
           <div class="text-content">
            <h1 style="font-size:50px;color:white;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome to Board Of Study-Tracker</h1>
           </div>
         </div>
-      </div>
+      <%--</div>--%>
     </div>
     <!-- Banner Ends Here -->
 

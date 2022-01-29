@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="viewBosMem.aspx.cs" Inherits="DAA_Tracker.viewBosMem" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="viewBosMem.aspx.cs" Inherits="DAA_Tracker.viewBosMem"%>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
@@ -47,10 +47,25 @@
     <!-- Page Content
     Banner Starts Here-->
     <div class="banner header-text">
-      <div class="owl-banner owl-carousel">
+     
         <div class="banner-item-01">
           <div class="text-content">
-             <div class="align-content-center container" style="width:1200px;height:285px;overflow:scroll">
+              <div class="container">
+              <table>
+                  <tr>
+                      <td style="color:white">
+                          <span style="font-size:18px">Please select the BOS Date  <i class="fa fa-hand-o-right" aria-hidden="true"></i></span>
+                      </td>
+                      <td>
+                          <asp:DropDownList  ID="DropDownList1" style="text-align:left" OnSelectedIndexChanged="DropDownListmem_SelectedIndexChanged" runat="server" AutoPostBack="true" CssClass="btn btn-secondary dropdown-toggle btn-dark btn-sm"></asp:DropDownList>
+                        </td>
+                  </tr>
+                </table>                 
+                  </div>
+              <br />
+              <br />
+
+                           <div class="align-content-center container" style="width:1200px;height:285px;overflow:scroll">
                  <asp:GridView ID="GridViewMem" CssClass="table" runat="server" BackColor="Black" ForeColor="White" BorderStyle="Solid" Font-Bold="False" GridLines="Both" AllowCustomPaging="False">                     
                  
                     <%-- <Columns>  
@@ -62,18 +77,31 @@
                             </asp:TemplateField>  
                     </Columns>--%>  
                 
-                 </asp:GridView>
+                     </asp:GridView>                                                        
              </div>
+              <br />
+              <br />
+              <div class="container">
+               <asp:GridView ID="GridView1" runat="server" HeaderStyle-BackColor="#000000" HeaderStyle-ForeColor="White"
+    RowStyle-BackColor="#ccffff" AlternatingRowStyle-BackColor="Black" AlternatingRowStyle-ForeColor="#000"
+    AutoGenerateColumns="false" style="width:400px;height:50px">
+    <Columns>
+        <asp:BoundField DataField="Name" HeaderText="File Name"/>
+        <asp:TemplateField ItemStyle-HorizontalAlign = "Center">
+            <ItemTemplate>
+               <asp:LinkButton ID="lnkDownload" OnClick="DownloadFile" runat="server" Text="Download" ForeColor="#000000"></asp:LinkButton>
+            </ItemTemplate>
+        </asp:TemplateField>
+    </Columns>
+</asp:GridView>
+                  </div>             
           </div>
         </div>
       </div>
-    </div>
     <!-- Banner Ends Here -->
     <!-- Bootstrap core JavaScript -->
    <script src="vendor/jquery/jquery.min.js"></script>
    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-
     <!-- Additional Scripts -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/owl.js"></script>

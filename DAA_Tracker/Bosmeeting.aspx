@@ -112,6 +112,14 @@
           <div class="container">
              <table>
                  <tr>
+                     <td>
+                         Select date:
+                     </td>
+                     <td>
+                         <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
+                     </td>
+                 </tr>
+                 <tr>
                      <td style="color:white;text-align:left" class="auto-style25">Year:</td>
                      <td class="auto-style26">
                          <asp:TextBox ID="txtYear" BackColor="Transparent" ForeColor="White" CssClass="form-control" runat="server"></asp:TextBox>

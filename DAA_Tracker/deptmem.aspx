@@ -88,36 +88,47 @@
            
                   <br />
                   <br />
-                  <br />
+                
 
-            <table class="align-content-center" border="6">
+            <table class="align-content-center" border="1" style="width:890px">
                 <tr>
                     <td colspan="2" style="text-align:center">
                         <br />
                         <h1 style="color:whitesmoke">Department Members</h1>
                         <br />
-                        <br />
+                        
                     </td>
                 </tr>
                 <tr>
                     <td style="color:ghostwhite;text-align:left" class="auto-style28">
-                        &nbsp;
-                        Please enter the faculty names by comma seperating it-
+                        &nbsp; Please enter faculty names by comma seperating it <i class="fa fa-hand-o-right" aria-hidden="true"></i>
                     </td>
                     <td class="auto-style27">
-                        <asp:TextBox ID="TextBox1"  BackColor="Transparent" ForeColor="White" CssClass="auto-style29" runat="server" TextMode="MultiLine" Height="117px" Width="361px"></asp:TextBox>
+                        <asp:TextBox ID="TextBox1"  BackColor="Transparent" ForeColor="White" CssClass="auto-style29" runat="server" TextMode="MultiLine" Height="117px" Width="410px"></asp:TextBox>
                     </td>
                 </tr>
                 <tr>
                     <td class="auto-style30" style="text-align:center">
                         <br />
                         <asp:Button ID="btnback" CssClass="btn btn-danger" runat="server" Text="Go back" OnClick="btnback_Click" />
+                        
+                        <br />
+                        
+                        <br />
+                        
                     </td>
                     <td style="text-align:center">
                         <br />    
                         <asp:Button ID="btnupdate"  CssClass="btn btn-success" runat="server" Text="Update" OnClick="btnupdate_Click" />
+                        
+                        <br />
+                        
+                        <br />
+                        
                     </td>
+                    
                 </tr>
+               
             </table>               
                   </div>
               </div>
@@ -125,7 +136,7 @@
         </div>
 
     <!-- Bootstrap core JavaScript -->
-     <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
