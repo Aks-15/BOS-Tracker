@@ -105,6 +105,7 @@
                     </td>
                     <td class="auto-style27">
                         <asp:TextBox ID="TextBox1"  BackColor="Transparent" ForeColor="White" CssClass="auto-style29" runat="server" TextMode="MultiLine" Height="117px" Width="410px"></asp:TextBox>
+                        <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TextBox1" ErrorMessage="Please enter the Department faculty names" ForeColor="Red"></asp:RequiredFieldValidator>
                     </td>
                 </tr>
                 <tr>
@@ -136,7 +137,7 @@
         </div>
 
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 

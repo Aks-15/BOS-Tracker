@@ -1,112 +1,16 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="BOSMembers.aspx.cs" Inherits="DAA_Tracker.BOSMembers" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="updateBos.aspx.cs" Inherits="DAA_Tracker.updateBos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style type="text/css">
-        .auto-style13 {
-            height: 50px;
-            width: 200px;
-        }
-        .auto-style14 {
-            height: 59px;
-            width: 197px;
-        }
-        .auto-style15 {
-            height: 50px;
-            width: 200px;
-        }
-        .auto-style16 {
-            height: 64px;
-            width: 197px;
-        }
-        .auto-style23 {
-            height: 82px;
-            width: 200px;
-        }
-        .auto-style24 {
-            height: 82px;
-            width: 197px;
-        }
-        .auto-style27 {
-            width: 750px;
-            margin-right: 71px;
-        }
-        .auto-style28 {
-            width: 1285px;
-            text-align:left;
-            height: 64px;
-        }
-        .auto-style29 {
-            width: 197px;
-        }
-        .auto-style30 {
-            display: block;
-            font-size: 1rem;
-            line-height: 1.5;
-            color: #495057;
-            background-clip: padding-box;
-            border-radius: .25rem;
-            transition: none;
-            border: 1px solid #ced4da;
-            background-color: #fff;
-        }
-        .auto-style31 {
-            width: 1285px;
-            text-align: left;
-            height: 58px;
-        }
-        .auto-style32 {
-            height: 58px;
-            width: 197px;
-        }
-        .auto-style33 {
-            height: 58px;
-            width: 200px;
-        }
-        .auto-style34 {
-            width: 197px;
-            height: 57px;
-        }
-        .auto-style35 {
-            height: 57px;
-            width: 200px;
-        }
-        .auto-style36 {
+        .auto-style1 {
             height: 67px;
-            width: 200px;
         }
-        .auto-style37 {
-            height: 67px;
-            width: 197px;
-        }
-        .auto-style38 {
-            height: 78px;
-            width: 200px;
-        }
-        .auto-style39 {
-            height: 78px;
-            width: 197px;
-        }
-        .auto-style40 {
-            height: 72px;
-            width: 200px;
-        }
-        .auto-style41 {
-            height: 72px;
-            width: 197px;
-        }
-        .auto-style42 {
-            height: 64px;
-        }
-        .auto-style43 {
-            height: 48px;
-        }
-        .auto-style44 {
-            width: 197px;
-            height: 48px;
+        .auto-style2 {
+            height: 69px;
         }
     </style>
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server"> 
-    <!-- ***** Preloader End ***** -->
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
     <header class="">
@@ -170,19 +74,19 @@
           <div >            
               <div class="container">
              <table class="auto-style27">
+                 
                  <tr>
-                     <td colspan="2">
-                         <asp:Label ID="Label1" style="font-family: 'Scada', sans-serif;color:firebrick;font-size:30px;margin-left:-100px;font-weight:600" runat="server" Text="BOARD OF STUDY - MEMBERS"></asp:Label>
+                     <td colspan="2" style="text-align:center">
+                         <asp:Label ID="Label1" style="font-family: 'Scada', sans-serif;color:firebrick;font-size:30px;margin-left:-100px;font-weight:600" runat="server" Text="UPDATE BOARD OF STUDY - MEMBERS"></asp:Label>
                      <br /><br />
                      </td>
-                 </tr>
+                 </tr>  
                  <tr>
-                     <td style="color:white;text-align:left" class="auto-style33">Date:</td>
-                     <td class="auto-style32" style="text-align:left">
-                         <asp:TextBox ID="txtdate" TextMode="Date" BackColor="Transparent" ForeColor="White" CssClass="auto-style30" runat="server" style="margin-top:5px;" Width="349px"></asp:TextBox>
-                         </td>
-                     <td class="auto-style31" style="padding-block-start:auto">
-                         <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ErrorMessage="Please select BOS Meeting held date" ControlToValidate="txtdate" ForeColor="Red" Width="300px"></asp:RequiredFieldValidator>
+                     <td style="color:white;text-align:left">
+                         Date:
+                     </td>
+                     <td  class="auto-style34">
+                         <asp:TextBox ID="txtdate" BackColor="Transparent" ReadOnly ForeColor="White" CssClass="form-control" style="margin-top:5px;width:350px" runat="server"></asp:TextBox>
                      </td>
                  </tr>
                  <tr>
@@ -254,10 +158,10 @@
                      </td>--%>
                  </tr>
                  <tr>
-                     <td style="color:white;text-align:left" class="auto-style13">
+                     <td style="color:white;text-align:left" class="auto-style1">
                      Meritorious Alumnus:
                      </td>
-                     <td class="auto-style14" style="text-align:left">
+                     <td class="auto-style1" style="text-align:left">
                          <asp:TextBox ID="txtMa" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White" style="margin-top:5px;width:350px" required></asp:TextBox>
                           </td>
                     <%-- <td class="auto-style28">
@@ -265,44 +169,47 @@
                      </td>--%>
                  </tr>
                  <tr>
-                     <td style="color:white;text-align:left">
+                     <td style="color:white;text-align:left" class="auto-style2">
                      Student Representative:
                      </td>
-                     <td style="text-align:left" class="auto-style29">
-                         <asp:TextBox ID="txtSr" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White" style="margin-top:-5px;width:350px" required></asp:TextBox> 
+                     <td style="text-align:left" class="auto-style2">
+                         <asp:TextBox ID="txtSr" CssClass="form-control" runat="server" BackColor="Transparent" ForeColor="White" style="margin-top:-15px;width:350px" required></asp:TextBox> 
                           </td>
                      <%--<td class="auto-style28">
                          <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="Please enter name of Student Representative" ControlToValidate="txtSr" ForeColor="Red"></asp:RequiredFieldValidator>
                      </td>--%>
                  </tr>
+                 
                  <tr>
-                     <td style="color:white;text-align:left" class="auto-style42">
-                         Upload File:
+                     <%--<td style="text-align:left">
+                         
                      </td>
-                     <td style="text-align:left" class="auto-style16">
-                         <asp:FileUpload ID="FileUpload1" runat="server" ForeColor="White" style="margin-top:-5px;width:350px"/>&nbsp;&nbsp; 
-                          </td>
-                     <td class="auto-style28">
-                         <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ErrorMessage="Please upload a document/file which contains an approval of BOS Meeting" ControlToValidate="FileUpload1" ForeColor="Red"></asp:RequiredFieldValidator>                        
+                     <td style="text-align:left">
+                        
+                         
+                     </td>
+                  
+                     <td style="text-align:center"> 
+                         
+                     </td>--%>
+                     
+                     <td style="text-align:center">
+                            <asp:Button ID="Button1" CssClass="btn btn-sm btn-danger" OnClick="Button1_Click" runat="server" Text="Clear"  />                           
+                     </td>
+                     <td style="text-align:center">
+                         <asp:Button ID="Button2" runat="server" OnClick="Button2_Click" CssClass="btn btn-sm btn-success" Text="Update" />
                      </td>
                  </tr>
-                 <tr>
-                     <td style="text-align:center" class="auto-style43">
-                         <asp:Button ID="btnClear" CssClass="btn btn-sm btn-danger" runat="server" Text="Clear" OnClick="btnClear_Click"/>
-                     </td>
-                     <td style="text-align:center" class="auto-style44">
-                         &nbsp;&nbsp;&nbsp;&nbsp;
-                         <asp:Button ID="Btnadd" runat="server" CssClass="btn btn-sm btn-success" Text="ADD" OnClick="Btnadd_Click" />
-                     </td>
-                 </tr>
-             </table>                      
+             </table>                 
+                  <br />
+                  <br />
           </div>
         </div>
       </div>
     </div>
     <!-- Bootstrap core JavaScript -->
-           <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Additional Scripts -->

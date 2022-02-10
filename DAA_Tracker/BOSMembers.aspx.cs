@@ -38,24 +38,6 @@ namespace DAA_Tracker
 
         protected void Btnadd_Click(object sender, EventArgs e)
         {
-            /* string date;
-             string date1 = txtdate.Text;
-             if(date1.EndsWith("12:00:00 AM"))
-             {
-                 date = date1.Replace("12:00:00 AM", " ").Replace("", "");
-             }
-             else
-             {
-                 date = txtdate.Text;
-             }*/
-
-            //DateTime date=DateTime.ParseExact(date1, "yyyy-MM-dd",null).Date;
-
-            //Convert.ToDateTime(date1);
-
-            /* DateTime date = DateTime.ParseExact(txtdate.Text, "dd/MM/yyyy", null);
-            date = Convert.ToDateTime(date, System.Globalization.CultureInfo.GetCultureInfo("hi-IN").DateTimeFormat);*/
-                       
             string date = txtdate.Text;          
             string p = txtplace.Text;
             string cm = txtCm.Text;
@@ -96,10 +78,21 @@ namespace DAA_Tracker
                         }
                     }
                 }
-               Response.Write("<script>alert('BOS Members inserted successfully')</script>");
-            }
-        }
 
+                //string message = "BOS Members inserted successfully";
+                //string script = "window.onload = function(){ alert('";
+                //script += message;
+                //script += "');";
+                //script += "window.location ='";
+                //script += Request.Url.AbsoluteUri;
+                //script += "'; }";
+                //ClientScript.RegisterStartupScript(this.GetType(), "SuccessMessage", script, true);
+                Response.Write("<script>alert('BOS Members inserted successfully')</script>");
+                Response.AddHeader("refresh", "0;Bosmeeting.aspx");
+            }
+           
+        }
+ 
         protected void btnClear_Click(object sender, EventArgs e)
         {
             txtdate.Text = "";
@@ -112,9 +105,5 @@ namespace DAA_Tracker
             txtSr.Text = "";
         }
 
-        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

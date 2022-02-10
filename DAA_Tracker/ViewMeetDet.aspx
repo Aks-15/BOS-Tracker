@@ -48,7 +48,7 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-             <div class="align-content-center container" style="width:1200px;height:300px">
+             <div class="align-content-center container" style="width:1100px;height:250px">
                  <asp:GridView ID="GridViewMeet" runat="server" BackColor="Black" ForeColor="White" BorderStyle="Solid" Font-Bold="False" GridLines="Both" AllowCustomPaging="False"></asp:GridView>
              </div>
           </div>
