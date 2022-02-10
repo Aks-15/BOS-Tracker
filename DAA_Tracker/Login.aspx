@@ -48,18 +48,15 @@
                         <!--<h2 class="mb-4 tm-content-title text-center">LOG IN</h2>-->
                         <form id="contact-form" action="" method="POST">
                             <div class="form-group mb-4">
-                                <asp:TextBox ID="txtuser" CssClass="form-control" placeholder="UserName" required=""  runat="server"></asp:TextBox>
+                                <asp:TextBox ID="txtuser" CssClass="form-control" placeholder="Please enter the username" required="" AutoCompleteType="Disabled"  runat="server"></asp:TextBox>
                             </div>
                             <div class="form-group mb-4">
-                                <asp:TextBox ID="txtpwd" runat="server" CssClass="form-control" placeholder="Password" required="" TextMode="Password"></asp:TextBox>
+                                <asp:TextBox ID="txtpwd" runat="server" CssClass="form-control" title="Pleaser enter minimum of 8 characters having one uppercase, lowercase and a number should be present!" placeholder="Please enter the password" required="" TextMode="Password"></asp:TextBox>
                             </div>
                             <div class="text-center">
                                 <asp:Button ID="btnlogin" runat="server" CssClass="btn btn-big btn-primary" Text="LogIn" OnClick="btnlogin_Click" />
                             </div>
-                            <br />
-                            <div class="text-center">
-                                <asp:Label ID="Label1" CssClass="text-danger" runat="server" Text=""></asp:Label>
-                            </div>
+                            <br />                            
                         </form>
                     </section>
                 </main>

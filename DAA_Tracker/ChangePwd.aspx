@@ -1,15 +1,29 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="BOSHome.aspx.cs" Inherits="DAA_Tracker.BOSHome" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/loginhome.Master" AutoEventWireup="true" CodeBehind="ChangePwd.aspx.cs" Inherits="DAA_Tracker.ChangePwd" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+    <style type="text/css">
+        .auto-style1 {
+            margin-left: 30;
+            margin-right: 31;
+            margin-bottom: 21;
+        }
+        .auto-style2 {
+            height: 62px;
+        }
+        .auto-style3 {
+            height: 62px;
+            width: 222px;
+        }
+        .auto-style4 {
+            width: 222px;
+            height: 51px;
+        }
+        .auto-style5 {
+            height: 51px;
+        }
+    </style>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-         <div id="preloader">
-        <div class="jumper">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-    </div>  
-    <!-- ***** Preloader End ***** -->
+     <!-- ***** Preloader End ***** -->
 
     <!-- Header -->
     <header class="">
@@ -19,19 +33,19 @@
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarResponsive"> 
+          <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav ml-auto">
-              <li class="nav-item active">
+              <li class="nav-item ">
                 <a class="nav-link" href="BOSHome.aspx">Home
                   <span class="sr-only">(current)</span>
                 </a>
               </li> 
-              <li class="nav-item  dropdown">
+             <li class="nav-item  dropdown">
                 <a class="nav-link" href="#" data-toggle="dropdown">BOS Meeting<i class="fa fa-caret-down hidden-xs" aria-hidden="true"></i></a>
                   <ul class="dropdown-menu" style="background-color:rgb(128, 128, 128)"  aria-labelledby="menu1">
                       <li><a href="BOSMembers.aspx" style="color:white">Add Members</a></li><hr />
-                               <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
-                                <li><a href="deptmem.aspx" style="color:white">Update Dept Mem</a></li>                               
+                                <li><a href="Bosmeeting.aspx" style="color:white">Add Details</a></li><hr />
+                                <li><a href="deptmem.aspx" style="color:white">Update Dept Mem</a></li>                             
                             </ul>
               </li>
               <li class="nav-item">
@@ -59,21 +73,48 @@
     <!-- Page Content -->
     <!-- Banner Starts Here -->
     <div class="banner header-text">
-      <%--<div class="owl-banner owl-carousel">--%>
+     
         <div class="banner-item-01">
-            
           <div class="text-content">
-           <h1 style="font-size:50px;color:white;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif">Welcome to Board Of Study-Tracker</h1>
+          <div class="container">
+              <h3 style="color:white;text-align:left">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Change Password</h3>
+                <table class="align-content-center">
+                    <tr>
+                        <td style="color:ghostwhite;text-align:left" class="auto-style3">
+                            User Name:
+                        </td>
+                        <td class="auto-style2">
+                            <asp:TextBox ID="txtuname" ReadOnly BackColor="Transparent"  ForeColor="White" runat="server" CssClass="auto-style1 form-control"></asp:TextBox>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td style="color:ghostwhite;text-align:left" class="auto-style4">
+                            New Password:
+                        </td>
+                        <td class="auto-style5">
+                            <asp:TextBox ID="txtpwd" BackColor="Transparent" CssClass="form-control" ForeColor="White" runat="server" required></asp:TextBox>
+                        </td>
+                        <td>
+                            <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ErrorMessage="Pleaser enter minimum of 8 characters having one uppercase, lowercase and a number should be present!" ControlToValidate="txtpwd" ForeColor="#FF3300" ValidationExpression="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{4,8}$"></asp:RegularExpressionValidator>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            &nbsp;<br />
+                            <asp:Button ID="btnupdate" runat="server" CssClass="btn btn-success" Text="Change" OnClick="btnupdate_Click" />
+                        </td>
+                    </tr>
+                </table>
+              <asp:Label ID="Label1" style="color:white" runat="server" Text=""></asp:Label>
+             </div>
           </div>
         </div>
-      <%--</div>--%>
+    
     </div>
-    <!-- Banner Ends Here -->
-
-
+    <!-- Banner Ends Here -->     
     <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+                     <script src="vendor/jquery/jquery.min.js"></script>
+   <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 
     <!-- Additional Scripts -->

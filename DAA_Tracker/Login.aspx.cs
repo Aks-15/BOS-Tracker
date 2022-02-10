@@ -41,11 +41,14 @@ namespace DAA_Tracker
         {
            if(txtuser.Text == huser && txtpwd.Text == hpwd || txtuser.Text == duser && txtpwd.Text == dpwd)
             {
+                Session["uname"]=txtuser.Text;                
                 Response.Redirect("BOSHome.aspx");
             }
             else
             {
-                Label1.Text = "Please Enter Proper UserName and Password";
+                Response.Write("<script>alert('Login Failed!! Please try again')</script>");
+                txtuser.Text = "";
+                txtpwd.Text = "";
             }
         }
     }

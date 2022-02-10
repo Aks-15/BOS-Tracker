@@ -105,6 +105,8 @@
     <Content Include="BOSHome.aspx" />
     <Content Include="Bosmeeting.aspx" />
     <Content Include="BOSMembers.aspx" />
+    <Content Include="BosReport.aspx" />
+    <Content Include="ChangePwd.aspx" />
     <Content Include="css\bootstrap.min.css" />
     <Content Include="css\templatemo-diagoona.css" />
     <Content Include="deptmem.aspx" />
@@ -136,6 +138,7 @@
     <Content Include="img\services-1.jpg" />
     <Content Include="img\services-2.jpg" />
     <Content Include="img\services-3.jpg" />
+    <Content Include="img\slide_01.jpg" />
     <Content Include="js\bootstrap.min.js" />
     <Content Include="js\jquery-3.4.1.min.js" />
     <Content Include="js\jquery.backstretch.min.js" />
@@ -143,6 +146,7 @@
     <Content Include="Login.aspx" />
     <Content Include="Services.aspx" />
     <Content Include="Syllabus.aspx" />
+    <Content Include="updateBos.aspx" />
     <Content Include="vendor\bootstrap\css\bootstrap.css" />
     <Content Include="vendor\bootstrap\css\bootstrap.min.css" />
     <Content Include="vendor\bootstrap\js\bootstrap.bundle.js" />
@@ -193,6 +197,20 @@
     <Compile Include="BOSMembers.aspx.designer.cs">
       <DependentUpon>BOSMembers.aspx</DependentUpon>
     </Compile>
+    <Compile Include="BosReport.aspx.cs">
+      <DependentUpon>BosReport.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="BosReport.aspx.designer.cs">
+      <DependentUpon>BosReport.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="ChangePwd.aspx.designer.cs">
+      <DependentUpon>ChangePwd.aspx</DependentUpon>
+    </Compile>
     <Compile Include="deptmem.aspx.cs">
       <DependentUpon>deptmem.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -242,6 +260,13 @@
     </Compile>
     <Compile Include="Syllabus.aspx.designer.cs">
       <DependentUpon>Syllabus.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="updateBos.aspx.cs">
+      <DependentUpon>updateBos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="updateBos.aspx.designer.cs">
+      <DependentUpon>updateBos.aspx</DependentUpon>
     </Compile>
     <Compile Include="viewBosMem.aspx.cs">
       <DependentUpon>viewBosMem.aspx</DependentUpon>

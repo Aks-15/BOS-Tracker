@@ -49,7 +49,7 @@
                         <hr class="mb-4">
                         <div class="media my-3">
                             <div class="media-body">
-                                <p>This website keeps track of BOS (Board Of Study) Activity of MCA Department. In this website all the Academic matters like Introduction of a new Academic Programme, Revision of a programme / course, review of academic rules, etc can be handled. It is also used to manage all the information related to BOS meeting which has syllabus changes, new course introduction, keeping the records of people attended BOS meeting and many other activities.</p>
+                                <p>The DAA-Tracker is a web-based application that keeps track of all the BOS-Meeting details and Agenda’s that are discussed during the meeting and generates a meeting report based on the user's requirements. This project is used to manage the information’s of BOS meeting such as details related to members of the department, members who attended the BOS meeting, approved file of a BOS meeting as well as discussion which happened during the meetings like Agenda’s related to syllabus changes, new course introduction and many other activities. All these details of a particular meeting will be generated as a report to the user.</p>
                             </div> 
                         </div>
                         <!--<div class="media my-3">
