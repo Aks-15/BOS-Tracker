@@ -28,12 +28,12 @@
                               <li><a href="ViewMeetDet.aspx" style="color:white">View Details</a></li>                         
                             </ul>
               </li>
-              <li class="nav-item">
+             <!--<li class="nav-item">
                 <a class="nav-link" href="Syllabus.aspx">Syllabus</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Feedback.aspx">Feedback</a>
-              </li>
+              </li>-->
              <li class="nav-item">
                 <a class="nav-link" href="Home.aspx">Logout</a>
               </li>
@@ -48,7 +48,7 @@
       <div class="owl-banner owl-carousel">
         <div class="banner-item-01">
           <div class="text-content">
-             <div class="align-content-center container" style="width:1200px;height:300px">
+             <div class="align-content-center container" style="width:1100px;height:250px">
                  <asp:GridView ID="GridViewMeet" runat="server" BackColor="Black" ForeColor="White" BorderStyle="Solid" Font-Bold="False" GridLines="Both" AllowCustomPaging="False"></asp:GridView>
              </div>
           </div>
